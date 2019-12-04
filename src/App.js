@@ -89,28 +89,24 @@ class App extends Component {
   }
   
   render() {
+    const a = ({color: "secondary"});
     return (
       <div className="App">
         <AppBar className="AppBar" position="static">
           <Toolbar>
-          <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-            >
-            </IconButton>
           <Autocomplete
-            id="test"
+            className="Autocomplete"
             options={this.state.availTickers}
             getOptionLabel={option => option}
             style={{ width: 300 }}
             renderInput={params => (
               <TextField {...params} 
-                label="Search ticker symbols from S&P500" variant="outlined" fullWidth 
+                className="TextField" color="secondary" defaultValue="hi" label="Search ticker symbols from S&P500" 
+                variant="outlined" fullWidth 
                 onKeyPress={this.addToPortfolio}/>
             )}
             />
-            <Button variant="contained" onClick={this.calculatePortfolio}>
+            <Button padding="20px" variant="contained" onClick={this.calculatePortfolio}>
               Calculate Optimal Portfolio</Button>
             
           </Toolbar>

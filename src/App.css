@@ -1,7 +1,19 @@
+.TextField {
+  color: "white";
+}
+.MuiTextField-root {
+  background-color: gray;
+}
+.Autocomplete {
 
+}
+
+.App {
+  color: 'red';
+}
 
 .AppBar {
-  color: 'default';
+  color: 'green';
 }
 .Chart {
   padding: 60px;
