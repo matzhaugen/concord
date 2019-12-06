@@ -110,7 +110,7 @@ class App extends Component {
               Calculate Optimal Portfolio</Button>
             
           </Toolbar>
-          </AppBar>
+        </AppBar>
         <Grid container direction="row" spacing={4}>
         <Grid item>
           <Paper className="Portfolio">
