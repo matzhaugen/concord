@@ -51,6 +51,7 @@ class App extends Component {
 
   addToPortfolio(e) {    
     const tick = e.target.value
+    console.log(tick)
     if (e.key === 'Enter') {
         if (!this.state.portfolio.includes(tick)) {         
           if (this.state.availTickers.includes(tick)){

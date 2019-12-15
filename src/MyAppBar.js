@@ -40,6 +40,10 @@ export default function MyAppBar(props) {
                 {option}
               </div>
             )}
+            renderTags={(value) => (
+              <div onKeyPress={props.addToPortfolio}>
+                            {value}
+                          </div>)}
             style={{ width: 300, height: 50}}
             renderInput={params => (
               <TextField {...params} 
