@@ -12,8 +12,8 @@ class Chart extends Component {
 	          <LineSeries data={this.props.data}/>
 	          <VerticalGridLines />
 	          <HorizontalGridLines />
-	          <XAxis />
-	          <YAxis />
+	          <XAxis title ="Time" />
+	          <YAxis title="Wealth Growth"/>
 	        </XYPlot>
 	        </div>
 	        )

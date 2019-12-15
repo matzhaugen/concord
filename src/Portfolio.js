@@ -10,10 +10,10 @@ class Portfolio extends Component {
   
   render() {
     return(      
-      
+
       <List subheader={<ListSubheader>Portfolio</ListSubheader>} dense={true}>
           {this.props.items.map((e) => (         
-              <ListItem key={e}>
+              <ListItem key={e} onClick={this.props.removeTicker}>
                   <ListItemText
                     primary={e}
                   />
