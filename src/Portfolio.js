@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import ListItemText from '@material-ui/core/ListItemText';
 import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from "@material-ui/core/styles";
 import Button from '@material-ui/core/Button';
